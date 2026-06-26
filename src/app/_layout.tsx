@@ -1,17 +1,18 @@
 import { DarkTheme, Stack, ThemeProvider } from 'expo-router';
-import { MD3DarkTheme, PaperProvider } from 'react-native-paper';
+import { PaperProvider } from 'react-native-paper';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import { QueryClientProvider } from '@tanstack/react-query';
 import { queryClient } from '@/lib/queryClient';
 import { useAuthStore } from '@/features/auth';
+import { appTheme } from '@/theme';
 
 const NavTheme = {
   ...DarkTheme,
   colors: {
     ...DarkTheme.colors,
-    background: MD3DarkTheme.colors.background,
-    card: MD3DarkTheme.colors.background,
+    background: appTheme.colors.background,
+    card: appTheme.colors.background,
   },
 };
 
@@ -36,8 +37,8 @@ function RootNavigator() {
 
 export default function RootLayout() {
   return (
-    <SafeAreaProvider style={{ backgroundColor: MD3DarkTheme.colors.background }}>
-      <PaperProvider theme={MD3DarkTheme} settings={{ rippleEffectEnabled: true }}>
+    <SafeAreaProvider style={{ backgroundColor: appTheme.colors.background }}>
+      <PaperProvider theme={appTheme} settings={{ rippleEffectEnabled: true }}>
         <StatusBar style="light" />
         <QueryClientProvider client={queryClient}>
           <ThemeProvider value={NavTheme}>

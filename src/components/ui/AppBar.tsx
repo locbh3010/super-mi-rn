@@ -1,34 +1,35 @@
-import { MD3Theme, Surface, Text, withTheme } from 'react-native-paper';
+import { Surface, Text } from 'react-native-paper';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Animated } from 'react-native';
-import View = Animated.View;
+import { View } from 'react-native';
+import { useAppTheme } from '@/theme';
 
 type Props = {
-  theme: MD3Theme;
   title: string;
 };
 
-function AppBar({ theme, title }: Props) {
+export default function AppBar({ title }: Props) {
+  const theme = useAppTheme();
   const insets = useSafeAreaInsets();
 
   return (
     <Surface
-      elevation={1}
-      style={[{ backgroundColor: theme.colors.elevation.level2 }, { paddingTop: insets.top + 2 }]}>
+      elevation={2}
+      style={{
+        backgroundColor: theme.colors.elevation.level2,
+        paddingTop: insets.top + 4,
+      }}>
       <View
         style={{
-          display: 'flex',
-          alignItems: 'center',
           flexDirection: 'row',
+          alignItems: 'center',
           justifyContent: 'space-between',
-          backgroundColor: theme.colors.elevation.level2,
-          paddingInline: 12,
-          paddingBlock: 14,
+          paddingHorizontal: 20,
+          paddingVertical: 16,
         }}>
-        <Text variant="titleMedium">{title}</Text>
+        <Text variant="titleLarge" style={{ color: theme.colors.onSurface, fontWeight: '700' }}>
+          {title}
+        </Text>
       </View>
     </Surface>
   );
 }
-
-export default withTheme(AppBar);

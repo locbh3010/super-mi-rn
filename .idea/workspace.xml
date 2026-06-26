@@ -8,13 +8,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(app)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(app)/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(app)/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(app)/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useAuth.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/AppBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/AppBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/components/AuthForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/components/AuthForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/components/GoogleButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/components/GoogleButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/screens/AuthScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/screens/AuthScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/screens/DashboardScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/screens/DashboardScreen.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1782471329427</updated>
       <workItem from="1782471330452" duration="2821000" />
-      <workItem from="1782475429997" duration="6548000" />
+      <workItem from="1782475429997" duration="9706000" />
     </task>
     <servers />
   </component>
