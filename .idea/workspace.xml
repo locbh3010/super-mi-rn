@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1861af2a-d6a6-4d59-9114-376766c325fe" name="Changes" comment="">
+    <list default="true" id="1861af2a-d6a6-4d59-9114-376766c325fe" name="Changes" comment="refactor ui off auth page">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/AppBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/AppBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/auth/components/AuthForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/components/AuthForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/auth/components/GoogleButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/components/GoogleButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/auth/screens/AuthScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/screens/AuthScreen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/screens/DashboardScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/screens/DashboardScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/colors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/theme.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,61 +31,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.4109014593480969E-8" />
-      <entry key="MS500" value="0.03341072291081028" />
-      <entry key="S2" value="0.6918508121604184" />
-      <entry key="S5" value="1.3968243978322994" />
-      <entry key="S10" value="1.921603710468396" />
-      <entry key="S30" value="2.5375499420074474" />
-      <entry key="S60" value="2.7660813145959824" />
-      <entry key="M2" value="3.1431500179786562" />
-      <entry key="M5" value="5.850483529710869" />
-      <entry key="M10" value="12.902449362102443" />
-      <entry key="M15" value="22.653439298105262" />
-      <entry key="M30" value="55.444842307700924" />
-      <entry key="H1" value="100.73144051660879" />
-      <entry key="H2" value="140.94567658049178" />
-      <entry key="H4" value="168.2376854902278" />
-      <entry key="D1" value="195.85645366820165" />
-      <entry key="W1" value="201.1087134587585" />
+      <entry key="MS100" value="1.027776354290704" />
+      <entry key="MS500" value="1.5267327868550133" />
+      <entry key="S2" value="2.927341708269902" />
+      <entry key="S5" value="4.281922064922418" />
+      <entry key="S10" value="5.025478293467969" />
+      <entry key="S30" value="5.645138104679032" />
+      <entry key="S60" value="5.81850465129966" />
+      <entry key="M2" value="5.908211189238514" />
+      <entry key="M5" value="5.9631999025523115" />
+      <entry key="M10" value="6.050732243623592" />
+      <entry key="M15" value="6.68213636225592" />
+      <entry key="M30" value="15.70180389324874" />
+      <entry key="H1" value="48.14705440993613" />
+      <entry key="H2" value="97.17198685586347" />
+      <entry key="H4" value="141.30982020629665" />
+      <entry key="D1" value="194.87407158768232" />
+      <entry key="W1" value="206.06847856505695" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000000366762" />
-      <entry key="S2" value="1.0038679585229522" />
-      <entry key="S5" value="1.163258619976223" />
-      <entry key="S10" value="1.5708107445910209" />
-      <entry key="S30" value="2.316481483006021" />
-      <entry key="S60" value="2.6228231672136406" />
-      <entry key="M2" value="2.8390802648595956" />
-      <entry key="M5" value="3.999694738775303" />
-      <entry key="M10" value="7.279382785846591" />
-      <entry key="M15" value="11.428967494841915" />
-      <entry key="M30" value="24.053398454064844" />
-      <entry key="H1" value="40.32898066972231" />
-      <entry key="H2" value="54.29190132172873" />
-      <entry key="H4" value="63.607475733696454" />
-      <entry key="D1" value="72.93633526817334" />
-      <entry key="W1" value="74.70084898196265" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="4.387325611747444E-273" />
+      <entry key="S10" value="9.646852922207582E-137" />
+      <entry key="S30" value="9.139366588770868E-46" />
+      <entry key="S60" value="5.2096991388893166E-23" />
+      <entry key="M2" value="1.2653174195609196E-11" />
+      <entry key="M5" value="1.1524857738466594E-4" />
+      <entry key="M10" value="0.03907499404987294" />
+      <entry key="M15" value="0.350383171791281" />
+      <entry key="M30" value="4.211575267998071" />
+      <entry key="H1" value="16.875292364725855" />
+      <entry key="H2" value="35.11980382619864" />
+      <entry key="H4" value="51.158367343438236" />
+      <entry key="D1" value="70.33616588107115" />
+      <entry key="W1" value="74.31446565612302" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="6.310330478257151E-4" />
-      <entry key="MS500" value="0.24824726469035693" />
-      <entry key="S2" value="1.2754994667211983" />
-      <entry key="S5" value="2.313072398551572" />
-      <entry key="S10" value="3.3307727700969236" />
-      <entry key="S30" value="4.781790511047978" />
-      <entry key="S60" value="5.349194049420361" />
-      <entry key="M2" value="5.960489170402974" />
-      <entry key="M5" value="9.835004426280303" />
-      <entry key="M10" value="20.164597692048577" />
-      <entry key="M15" value="34.061915768183916" />
-      <entry key="M30" value="79.47268209949286" />
-      <entry key="H1" value="141.0367941590574" />
-      <entry key="H2" value="195.2208405970384" />
-      <entry key="H4" value="231.83509864684873" />
-      <entry key="D1" value="268.7908234357665" />
-      <entry key="W1" value="275.8092737796701" />
+      <entry key="MS100" value="0.999859672737199" />
+      <entry key="MS500" value="1.5190417818050257" />
+      <entry key="S2" value="2.9237252444090296" />
+      <entry key="S5" value="4.279726439486571" />
+      <entry key="S10" value="5.024167644175352" />
+      <entry key="S30" value="5.644641282533332" />
+      <entry key="S60" value="5.818247801600854" />
+      <entry key="M2" value="5.908080577015702" />
+      <entry key="M5" value="5.963261933784418" />
+      <entry key="M10" value="6.089688244716524" />
+      <entry key="M15" value="7.031873657668823" />
+      <entry key="M30" value="19.90889517841542" />
+      <entry key="H1" value="65.01245583570902" />
+      <entry key="H2" value="132.28096160736982" />
+      <entry key="H4" value="192.46009329007484" />
+      <entry key="D1" value="265.2083418534323" />
+      <entry key="W1" value="280.38265702684214" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -145,11 +143,24 @@
       <option name="presentableId" value="Default" />
       <updated>1782471329427</updated>
       <workItem from="1782471330452" duration="2821000" />
-      <workItem from="1782475429997" duration="9706000" />
+      <workItem from="1782475429997" duration="10658000" />
     </task>
+    <task id="LOCAL-00001" summary="refactor ui off auth page">
+      <option name="closed" value="true" />
+      <created>1782486541820</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1782486541820</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactor ui off auth page" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor ui off auth page" />
   </component>
 </project>

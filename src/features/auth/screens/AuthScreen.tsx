@@ -22,11 +22,11 @@ export default function AuthScreen() {
       ]}>
       {/* Dynamic colorful blobs for MD3 Expressive look */}
       <LinearGradient
-        colors={['rgba(255, 202, 40, 0.18)', 'rgba(255, 202, 40, 0)']}
+        colors={[theme.colors.glowPrimary, 'rgba(255, 202, 40, 0)']}
         style={styles.glowTopRight}
       />
       <LinearGradient
-        colors={['rgba(240, 98, 146, 0.12)', 'rgba(240, 98, 146, 0)']}
+        colors={[theme.colors.glowTertiary, 'rgba(240, 98, 146, 0)']}
         style={styles.glowBottomLeft}
       />
 

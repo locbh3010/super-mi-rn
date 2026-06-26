@@ -59,4 +59,12 @@ export const darkColors = {
     level4: '#24242A',
     level5: '#28282F',
   },
+
+  // Expressive Glassmorphism and Glow colors
+  glassBackground: 'rgba(23, 23, 26, 0.6)',
+  glassBorder: 'rgba(255, 255, 255, 0.08)',
+  inputBackground: 'rgba(0, 0, 0, 0.25)',
+  inputBorder: 'rgba(255, 255, 255, 0.1)',
+  glowPrimary: 'rgba(255, 202, 40, 0.18)',
+  glowTertiary: 'rgba(240, 98, 146, 0.12)',
 } as const;

@@ -10,6 +10,7 @@ export const radii = {
   sm: 8,
   input: 16,
   card: 28,
+  cardLarge: 32,
   pill: 999,
 } as const;
 
@@ -24,8 +25,27 @@ export const spacing = {
 
 /** Component sizing tokens. */
 export const sizes = {
-  inputHeight: 60,
+  inputHeight: 56,
   buttonPaddingV: 6,
+  buttonHeight: 52,
+} as const;
+
+/** Custom shadows for expressive elevation */
+export const shadows = {
+  card: {
+    shadowColor: '#000000',
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.25,
+    shadowRadius: 16,
+    elevation: 4,
+  },
+  primaryButton: {
+    shadowColor: darkColors.primary,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 4,
+  },
 } as const;
 
 /**
@@ -40,6 +60,7 @@ export const appTheme = {
   radii,
   spacing,
   sizes,
+  shadows,
   colors: {
     ...MD3DarkTheme.colors,
     ...darkColors,

@@ -56,14 +56,11 @@ export default function AuthForm() {
           elevation={4}
           style={{
             padding: theme.spacing.lg,
-            borderRadius: 32,
-            backgroundColor: 'rgba(23, 23, 26, 0.6)',
+            borderRadius: theme.radii.cardLarge,
+            backgroundColor: theme.colors.glassBackground,
             borderWidth: 1,
-            borderColor: 'rgba(255, 255, 255, 0.08)',
-            shadowColor: '#000',
-            shadowOffset: { width: 0, height: 8 },
-            shadowOpacity: 0.25,
-            shadowRadius: 16,
+            borderColor: theme.colors.glassBorder,
+            ...theme.shadows.card,
             gap: 12,
           }}>
           {/* Header section with modern expressive emblem */}
@@ -118,13 +115,13 @@ export default function AuthForm() {
                   textColor={theme.colors.onSurface}
                   placeholderTextColor={theme.colors.onSurfaceVariant}
                   style={{
-                    height: 56,
-                    backgroundColor: 'rgba(0, 0, 0, 0.25)',
+                    height: theme.sizes.inputHeight,
+                    backgroundColor: theme.colors.inputBackground,
                   }}
-                  outlineColor="rgba(255, 255, 255, 0.1)"
+                  outlineColor={theme.colors.inputBorder}
                   activeOutlineColor={theme.colors.primary}
                   outlineStyle={{
-                    borderRadius: 16,
+                    borderRadius: theme.radii.input,
                     borderWidth: 1,
                   }}
                   left={
@@ -163,13 +160,13 @@ export default function AuthForm() {
                   textColor={theme.colors.onSurface}
                   placeholderTextColor={theme.colors.onSurfaceVariant}
                   style={{
-                    height: 56,
-                    backgroundColor: 'rgba(0, 0, 0, 0.25)',
+                    height: theme.sizes.inputHeight,
+                    backgroundColor: theme.colors.inputBackground,
                   }}
-                  outlineColor="rgba(255, 255, 255, 0.1)"
+                  outlineColor={theme.colors.inputBorder}
                   activeOutlineColor={theme.colors.primary}
                   outlineStyle={{
-                    borderRadius: 16,
+                    borderRadius: theme.radii.input,
                     borderWidth: 1,
                   }}
                   left={
@@ -216,13 +213,13 @@ export default function AuthForm() {
                     textColor={theme.colors.onSurface}
                     placeholderTextColor={theme.colors.onSurfaceVariant}
                     style={{
-                      height: 56,
-                      backgroundColor: 'rgba(0, 0, 0, 0.25)',
+                      height: theme.sizes.inputHeight,
+                      backgroundColor: theme.colors.inputBackground,
                     }}
-                    outlineColor="rgba(255, 255, 255, 0.1)"
+                    outlineColor={theme.colors.inputBorder}
                     activeOutlineColor={theme.colors.primary}
                     outlineStyle={{
-                      borderRadius: 16,
+                      borderRadius: theme.radii.input,
                       borderWidth: 1,
                     }}
                     left={
@@ -258,7 +255,7 @@ export default function AuthForm() {
           <Button
             mode="contained"
             onPress={handleSubmit(onSubmit)}
-            contentStyle={{ height: 52 }}
+            contentStyle={{ height: theme.sizes.buttonHeight }}
             labelStyle={{
               fontSize: 16,
               fontWeight: '700',
@@ -267,13 +264,9 @@ export default function AuthForm() {
             }}
             style={{
               marginTop: theme.spacing.xs,
-              borderRadius: 16,
+              borderRadius: theme.radii.input,
               backgroundColor: theme.colors.primary,
-              shadowColor: theme.colors.primary,
-              shadowOffset: { width: 0, height: 4 },
-              shadowOpacity: 0.3,
-              shadowRadius: 8,
-              elevation: 4,
+              ...theme.shadows.primaryButton,
             }}>
             {isRegister ? 'Sign Up' : 'Sign In'}
           </Button>

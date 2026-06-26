@@ -11,12 +11,12 @@ export default function GoogleButton() {
       mode="outlined"
       icon="google"
       onPress={signIn}
-      contentStyle={{ height: 52 }}
+      contentStyle={{ height: theme.sizes.buttonHeight }}
       labelStyle={{ fontSize: 15, fontWeight: '600', color: theme.colors.onSurface }}
       style={{
-        borderRadius: 16,
-        borderColor: 'rgba(255, 255, 255, 0.15)',
-        backgroundColor: 'rgba(255, 255, 255, 0.03)',
+        borderRadius: theme.radii.input,
+        borderColor: theme.colors.inputBorder,
+        backgroundColor: theme.colors.inputBackground,
       }}>
       Continue with Google
     </Button>
