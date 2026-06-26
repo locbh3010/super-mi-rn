@@ -1,12 +1,20 @@
 import { Stack } from 'expo-router';
-import { PaperProvider } from 'react-native-paper';
+import { MD3DarkTheme, PaperProvider } from 'react-native-paper';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function RootLayout() {
   return (
     <SafeAreaProvider>
-      <PaperProvider>
-        <Stack screenOptions={{ headerShown: false }} />
+      <PaperProvider theme={MD3DarkTheme} settings={{ rippleEffectEnabled: true }}>
+        <Stack
+          screenOptions={{
+            headerShown: false,
+            animation: 'slide_from_right',
+            contentStyle: {
+              backgroundColor: MD3DarkTheme.colors.background,
+            },
+          }}
+        />
       </PaperProvider>
     </SafeAreaProvider>
   );

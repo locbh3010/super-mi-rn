@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1861af2a-d6a6-4d59-9114-376766c325fe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/eas.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/AppBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/.gitkeep" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +22,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="16" />
+    <option name="cachedIndexableFilesCount" value="36" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -30,66 +35,66 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000008641494" />
-      <entry key="S2" value="1.0054218465586546" />
-      <entry key="S5" value="1.1240677450851488" />
-      <entry key="S10" value="1.3522325175451406" />
-      <entry key="S30" value="1.707461360787969" />
-      <entry key="S60" value="1.8755325150660251" />
-      <entry key="M2" value="2.104229431560355" />
-      <entry key="M5" value="2.4777463669843396" />
-      <entry key="M10" value="2.6982525083335447" />
-      <entry key="M15" value="2.7884367350074077" />
-      <entry key="M30" value="2.8886267176832203" />
-      <entry key="H1" value="2.9428366036571614" />
-      <entry key="H2" value="2.971038769919966" />
-      <entry key="H4" value="2.985423177317517" />
-      <entry key="D1" value="2.997557053437892" />
-      <entry key="W1" value="2.9996506761106057" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000001661225144" />
+      <entry key="S10" value="1.0005397531503635" />
+      <entry key="S30" value="1.3100432013204377" />
+      <entry key="S60" value="3.3256626759018317" />
+      <entry key="M2" value="9.538257855414605" />
+      <entry key="M5" value="27.946688263701294" />
+      <entry key="M10" value="51.72413793114272" />
+      <entry key="M15" value="69.54543880613512" />
+      <entry key="M30" value="102.16108798032815" />
+      <entry key="H1" value="129.84808490333276" />
+      <entry key="H2" value="148.60356774025044" />
+      <entry key="H4" value="159.63916780320778" />
+      <entry key="D1" value="169.8397291520041" />
+      <entry key="W1" value="171.68882358186931" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="MS500" value="3.8080133785686365E-69" />
+      <entry key="S2" value="7.85616028727078E-18" />
+      <entry key="S5" value="1.493699332044318E-7" />
+      <entry key="S10" value="5.124104972119396E-4" />
+      <entry key="S30" value="0.23487188975008103" />
+      <entry key="S60" value="1.4627906379744127" />
+      <entry key="M2" value="4.586919600884632" />
+      <entry key="M5" value="12.624131382459177" />
+      <entry key="M10" value="21.627852272944455" />
+      <entry key="M15" value="27.776800425551098" />
+      <entry key="M30" value="38.396208813977886" />
+      <entry key="H1" value="47.080369638839684" />
+      <entry key="H2" value="52.86386453638698" />
+      <entry key="H4" value="56.2393266439847" />
+      <entry key="D1" value="59.344168334152684" />
+      <entry key="W1" value="59.90556592077794" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.6751883585084075E-5" />
-      <entry key="MS500" value="0.12175053442608555" />
-      <entry key="S2" value="0.5961134759657243" />
-      <entry key="S5" value="0.9340975494154966" />
-      <entry key="S10" value="1.2521747795383724" />
-      <entry key="S30" value="1.6728907913720499" />
-      <entry key="S60" value="1.8580693793853773" />
-      <entry key="M2" value="2.0954152660201624" />
-      <entry key="M5" value="2.4741749540873887" />
-      <entry key="M10" value="2.6964538786211585" />
-      <entry key="M15" value="2.787234161822908" />
-      <entry key="M30" value="2.888023503246752" />
-      <entry key="H1" value="2.9425344765334223" />
-      <entry key="H2" value="2.9708875713220957" />
-      <entry key="H4" value="2.9853475436062893" />
-      <entry key="D1" value="2.9975444429834246" />
-      <entry key="W1" value="2.9996488744979364" />
+      <entry key="MS100" value="0.07484241903868304" />
+      <entry key="MS500" value="0.5954284246824841" />
+      <entry key="S2" value="0.8784304682383617" />
+      <entry key="S5" value="0.9494740356403649" />
+      <entry key="S10" value="0.9754202172385552" />
+      <entry key="S30" value="1.5247960660781665" />
+      <entry key="S60" value="4.742540109324164" />
+      <entry key="M2" value="14.052674609195767" />
+      <entry key="M5" value="40.48842034998753" />
+      <entry key="M10" value="73.27861898126248" />
+      <entry key="M15" value="97.25714607652448" />
+      <entry key="M30" value="140.5092271556443" />
+      <entry key="H1" value="176.8974586654049" />
+      <entry key="H2" value="201.4494947883346" />
+      <entry key="H4" value="215.8687947982766" />
+      <entry key="D1" value="229.18216698006134" />
+      <entry key="W1" value="231.59413932004838" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3Ffg2OCEh71Lta0GRNJkjLC1UoI" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -98,30 +103,30 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/locbh/Workspaces/task-rn",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "/home/locbh/Workspaces/task-rn/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/locbh/Workspaces/task-rn&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/locbh/Workspaces/task-rn/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -136,7 +141,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1782471329427</updated>
-      <workItem from="1782471330452" duration="2185000" />
+      <workItem from="1782471330452" duration="2821000" />
+      <workItem from="1782475429997" duration="3836000" />
     </task>
     <servers />
   </component>
