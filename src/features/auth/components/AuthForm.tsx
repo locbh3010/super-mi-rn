@@ -8,7 +8,7 @@ import {
   registerSchema,
   type RegisterValues,
 } from '@/features/auth/schemas/auth.schema';
-import { useAuthStore } from '@/features/auth/store/authStore';
+import { useLoginMutation, useRegisterMutation } from '@/features/auth/hooks';
 import GoogleButton from '@/features/auth/components/GoogleButton';
 import { useAppTheme } from '@/theme';
 
@@ -16,11 +16,14 @@ type Mode = 'login' | 'register';
 
 export default function AuthForm() {
   const theme = useAppTheme();
-  const signIn = useAuthStore(s => s.signIn);
   const [mode, setMode] = useState<Mode>('login');
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const isRegister = mode === 'register';
+
+  const loginMutation = useLoginMutation();
+  const registerMutation = useRegisterMutation();
+  const isPending = loginMutation.isPending || registerMutation.isPending;
 
   const {
     control,
@@ -34,7 +37,13 @@ export default function AuthForm() {
     defaultValues: { email: '', password: '', confirmPassword: '' },
   });
 
-  const onSubmit = () => signIn();
+  const onSubmit = (data: RegisterValues) => {
+    if (isRegister) {
+      registerMutation.mutate(data);
+    } else {
+      loginMutation.mutate({ email: data.email, password: data.password });
+    }
+  };
 
   const toggleMode = () => {
     setMode(isRegister ? 'login' : 'register');
@@ -112,6 +121,7 @@ export default function AuthForm() {
                   autoCapitalize="none"
                   keyboardType="email-address"
                   error={!!errors.email}
+                  editable={!isPending}
                   textColor={theme.colors.onSurface}
                   placeholderTextColor={theme.colors.onSurfaceVariant}
                   style={{
@@ -157,6 +167,7 @@ export default function AuthForm() {
                   onBlur={onBlur}
                   secureTextEntry={!showPassword}
                   error={!!errors.password}
+                  editable={!isPending}
                   textColor={theme.colors.onSurface}
                   placeholderTextColor={theme.colors.onSurfaceVariant}
                   style={{
@@ -210,6 +221,7 @@ export default function AuthForm() {
                     onBlur={onBlur}
                     secureTextEntry={!showConfirmPassword}
                     error={!!errors.confirmPassword}
+                    editable={!isPending}
                     textColor={theme.colors.onSurface}
                     placeholderTextColor={theme.colors.onSurfaceVariant}
                     style={{
@@ -255,6 +267,8 @@ export default function AuthForm() {
           <Button
             mode="contained"
             onPress={handleSubmit(onSubmit)}
+            loading={isPending}
+            disabled={isPending}
             contentStyle={{ height: theme.sizes.buttonHeight }}
             labelStyle={{
               fontSize: 16,
@@ -293,12 +307,13 @@ export default function AuthForm() {
           </View>
 
           {/* Google Button */}
-          <GoogleButton />
+          <GoogleButton disabled={isPending} />
 
           {/* Toggle mode Button */}
           <Button
             mode="text"
             onPress={toggleMode}
+            disabled={isPending}
             labelStyle={{ fontSize: 14, fontWeight: '600', color: theme.colors.primary }}
             style={{ marginTop: theme.spacing.xs }}>
             {isRegister ? 'Already have an account? Sign in' : "Don't have an account? Sign up"}

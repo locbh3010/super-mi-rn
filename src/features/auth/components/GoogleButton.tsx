@@ -1,16 +1,20 @@
+import { Alert } from 'react-native';
 import { Button } from 'react-native-paper';
-import { useAuthStore } from '@/features/auth/store/authStore';
 import { useAppTheme } from '@/theme';
 
-export default function GoogleButton() {
+interface GoogleButtonProps {
+  disabled?: boolean;
+}
+
+export default function GoogleButton({ disabled }: GoogleButtonProps) {
   const theme = useAppTheme();
-  const signIn = useAuthStore(s => s.signIn);
 
   return (
     <Button
       mode="outlined"
       icon="google"
-      onPress={signIn}
+      onPress={() => Alert.alert('Google Sign-In', 'Google sign-in is not implemented yet.')}
+      disabled={disabled}
       contentStyle={{ height: theme.sizes.buttonHeight }}
       labelStyle={{ fontSize: 15, fontWeight: '600', color: theme.colors.onSurface }}
       style={{

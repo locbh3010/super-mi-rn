@@ -1,5 +1,7 @@
+import { useEffect } from 'react';
+import { View } from 'react-native';
 import { DarkTheme, Stack, ThemeProvider } from 'expo-router';
-import { PaperProvider } from 'react-native-paper';
+import { ActivityIndicator, PaperProvider } from 'react-native-paper';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import { QueryClientProvider } from '@tanstack/react-query';
@@ -18,6 +20,26 @@ const NavTheme = {
 
 function RootNavigator() {
   const session = useAuthStore(s => s.session);
+  const isInitializing = useAuthStore(s => s.isInitializing);
+  const initialize = useAuthStore(s => s.initialize);
+
+  useEffect(() => {
+    initialize();
+  }, [initialize]);
+
+  if (isInitializing) {
+    return (
+      <View
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: '#0F0F10',
+        }}>
+        <ActivityIndicator size="large" color="#FFCA28" />
+      </View>
+    );
+  }
 
   return (
     <Stack
